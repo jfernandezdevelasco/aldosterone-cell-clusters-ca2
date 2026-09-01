@@ -4,7 +4,7 @@ This repository contains the data processing pipeline and analytical code used t
 
 This repository supports the methodologies detailed in:
 
-* **Journal Article:** *Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro*
+* **Journal Article:** *[Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro]. (https://www.ovid.com/jnls/jhypertension/abstract/10.1097/01.hjh.0001197000.34298.a2~synchronized-ca2-dynamics-in-glomeruli-like-human?redirectionsource=fulltextview)*
 * **University of Padua Thesis:** [Handle: 20.500.12608/64485](https://thesis.unipd.it/handle/20.500.12608/64485)
 
 ## Key Features and Methodology
