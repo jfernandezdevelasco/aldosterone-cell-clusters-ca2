@@ -1,11 +1,12 @@
 # aldosterone-cell-clusters-ca2
 
-This repository contains the data processing pipeline and analytical code used to evaluate intracellular calcium dynamics in primary human adrenocortical cells. The research and methodology are based on a university thesis and a journal poster.[1] [2].
+This repository contains the data processing pipeline and analytical code used to evaluate intracellular calcium dynamics in primary human adrenocortical cells. The research and methodology are based on a university thesis and a journal poster [1],[2].
 
 This repository supports the methodologies detailed in:
 
-* **Journal Article:** [Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro]. (https://www.ovid.com/jnls/jhypertension/abstract/10.1097/01.hjh.0001197000.34298.a2~synchronized-ca2-dynamics-in-glomeruli-like-human?redirectionsource=fulltextview)*
-* **University of Padua Thesis:** [Handle: 20.500.12608/64485](https://thesis.unipd.it/handle/20.500.12608/64485)
+* **Poster:** [Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro](https://www.ovid.com/jnls/jhypertension/abstract/10.1097/01.hjh.0001197000.34298.a2~synchronized-ca2-dynamics-in-glomeruli-like-human?redirectionsource=fulltextview)
+* **University of Padua Thesis:** [Temporal Dynamics of Calcium Signalling: Clustering Adrenal
+Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional statistical analysis](https://thesis.unipd.it/handle/20.500.12608/64485)
 
 ## Key Features and Methodology
 
@@ -49,5 +50,5 @@ The pipeline expects exported time-series data from microscopy software.
 
 ## Citation
 
-1. [H. Ajjour, G. Pallafacchina, J. F. de Velasco Biasiolo, M. G. Pedersen, B. Caroccia, L. Lenzini, T. M. Seccia, G. Rossi]. (2026). Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro. *Journal of Hypertension*. DOI: [10.1097/01.hjh.0001197000.34298.a2] (https://doi.org/10.1097/01.hjh.0001197000.34298.a2)
-2. [J. F. de Velasco Biasiolo]. (2024). [Temporal Dynamics of Calcium Signalling: Clustering Adrenal Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional statistical analysis]. *University of Padua*. [https://thesis.unipd.it/handle/20.500.12608/64485](https://thesis.unipd.it/handle/20.500.12608/64485)
+1. H. Ajjour, G. Pallafacchina, J. F. de Velasco Biasiolo, M. G. Pedersen, B. Caroccia, L. Lenzini, T. M. Seccia, G. Rossi. (2026). Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro. *Journal of Hypertension*. DOI: [10.1097/01.hjh.0001197000.34298.a2](https://doi.org/10.1097/01.hjh.0001197000.34298.a2)
+2. J. F. de Velasco Biasiolo. (2024). Temporal Dynamics of Calcium Signalling: Clustering Adrenal Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional statistical analysis. *University of Padua*. [https://thesis.unipd.it/handle/20.500.12608/64485](https://thesis.unipd.it/handle/20.500.12608/64485)
