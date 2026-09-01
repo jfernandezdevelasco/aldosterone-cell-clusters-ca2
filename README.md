@@ -10,11 +10,11 @@ Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional stati
 
 ## Key Features and Methodology
 
-* **Data Preprocessing:** The pipeline performs Z-score normalization on raw data. It applies a Savitzky-Golay filter using a third-order polynomial over a moving window of thirteen data points to reduce noise and photobleaching artifacts while maintaining peak features. Data extraction, normalization, and filtering steps are implemented in Python.
+* **Data Preprocessing:** The pipeline performs Z score normalization on raw data. It applies a Savitzky-Golay filter using a third order polynomial over a moving window of thirteen data points to reduce noise and photobleaching artifacts while maintaining peak features. Data extraction, normalization, and filtering steps are implemented in Python.
 
 * **Clustering Analysis:** A correlation matrix is turned into a dissimilarity matrix based on Pearson correlation coefficients. Hierarchical agglomerative clustering is executed using the SciPy library's linkage function with complete linkage to identify synchronized subclusters.
 
-* **Feature Extraction:** The code extracts features at various dendrogram distances (0.05 to 0.25) to explore optimal cluster numbers, excluding single-cell clusters to avoid redundant information.
+* **Feature Extraction:** The code extracts features at various dendrogram distances (0.05 to 0.25) to explore optimal cluster numbers, excluding single cell clusters to avoid redundant information.
 
 * **Statistical Modeling:** Linear mixed effects models are implemented using the lme4 package. These models analyze variables such as the number of predicted subclusters, sample origin (primary normal vs. aldosterone producing adenoma), and patient level random effects to accommodate inter subject variation.
 
