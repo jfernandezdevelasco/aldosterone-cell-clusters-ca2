@@ -21,7 +21,7 @@ Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional stati
 * **Functional ANOVA:** A non parametric bootstrap F-type test is implemented in R to perform functional ANOVA, evaluating if variability between labeled clusters is greater than the variability within each cluster. The modified heteroscedastic version of the F-type bootstrap test is found in the following repository [Fb-Heteroscedastic-Test](https://github.com/jfernandezdevelasco/Fb-Heteroscedastic-Test)
 
 
-## System Requirements**
+## System Requirements
 
 * **Languages:** Python (for preprocessing and clustering) and R (for statistical modeling and FANOVA).
 
@@ -48,7 +48,7 @@ The pipeline expects exported time series data from microscopy software.
 * **Rows:** Time (seconds)
 * **Columns:** 340/380 nm fluorescence ratios for individual Regions of Interest (ROIs) corresponding to single cells.
 
-## Citation
+## Source
 
 1. H. Ajjour, G. Pallafacchina, J. F. de Velasco Biasiolo, M. G. Pedersen, B. Caroccia, L. Lenzini, T. M. Seccia, G. Rossi. (2026). Synchronized Ca²⁺ Dynamics in Glomeruli-Like Human Aldosterone-Producing Cell Clusters In Vitro. *Journal of Hypertension*. DOI: [10.1097/01.hjh.0001197000.34298.a2](https://doi.org/10.1097/01.hjh.0001197000.34298.a2)
 2. J. F. de Velasco Biasiolo. (2024). Temporal Dynamics of Calcium Signalling: Clustering Adrenal Cells Producing Aldosterone through Ca2+ FURA-2 with the use of functional statistical analysis. *University of Padua*. [https://thesis.unipd.it/handle/20.500.12608/64485](https://thesis.unipd.it/handle/20.500.12608/64485)
