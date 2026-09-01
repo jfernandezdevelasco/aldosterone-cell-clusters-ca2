@@ -93,11 +93,12 @@ def run_pipeline():
                 summary_df, labels["Clusters"], sample_name, patient_id
             )
             correlations = analyzer.calculate_cluster_correlations(clean_data, labels)
-
+            number_of_cells_in_predicted_clusters = analyzer.num_cell_in_pred_df(ct, labels, patient_id, sample_name)
             processed_results[patient_id][sample_name] = {
                 "predictions": predictions,
                 "summary": sample_summary,
                 "correlations": correlations,
+                "number_of_cells_in_predicted_clusters":number_of_cells_in_predicted_clusters 
             }
             print(f"Processed {patient_id} - {sample_name}")
     processed_results["config"] = {"filter_method":FILTER_METHOD,"filter_config":FILTER_CONFIG[FILTER_METHOD],"Distance":DISTANCE_THRESHOLD}        

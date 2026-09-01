@@ -116,6 +116,37 @@ class PatientAnalyzer:
             "between_cluster_correlation": between_correlations,
         }
 
+    # Finding how many cells are in the predicted sub-clusters.
+    def num_cell_in_pred_df(self, crosstab, labels_series, patient_id, sample):
+        
+        # Exclude single-cell clusters
+        cluster_ids, counts = np.unique(labels_series, return_counts=True)
+        multi_cell_clusters = cluster_ids[counts > 1]
+        
+        # Filter crosstab to exclude single-cell functional clusters and zero counts
+        filtered_crosstab = crosstab[multi_cell_clusters]
+        stacked = filtered_crosstab.unstack().reset_index()
+        stacked.columns = ["fun_clust", "pred_clust", "num_cells_pred_(sub)_in_fun"]
+        stacked = stacked[stacked["num_cells_pred_(sub)_in_fun"] > 0].copy()
+
+        count_map = dict(zip(cluster_ids, counts))
+        stacked["num_cells_in_fun"] = stacked["fun_clust"].map(count_map)
+        stacked["sn_apa"] = 0 if "SN" in sample else 1
+        stacked["patient_id"] = patient_id
+        
+        sam_pat = sample.split()
+        sample_tag = f"{sam_pat[0]}_{sam_pat[1]}_{patient_id}" if len(sam_pat) > 1 else f"{sample}_{patient_id}"
+        stacked["sample"] = sample_tag
+        return stacked[[
+            "pred_clust", 
+            "fun_clust", 
+            "num_cells_in_fun", 
+            "num_cells_pred_(sub)_in_fun", 
+            "sn_apa", 
+            "patient_id", 
+            "sample"
+        ]]
+
 ########## Helper module for generation of cluster data visualizations.
 class Visualizer:
     # Plot dendrogram
