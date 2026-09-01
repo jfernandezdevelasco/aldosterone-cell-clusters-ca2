@@ -36,7 +36,7 @@ The dataset processed in this study includes Fura-2 Ca2+ imaging data from nine 
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/yourusername/calcium-dynamics-pipeline.git
+git clone https://github.com/jfernandezdevelasco/aldosterone-cell-clusters-ca2.git
 cd calcium-dynamics-pipeline
 
 ```
